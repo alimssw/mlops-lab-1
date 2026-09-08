@@ -80,3 +80,5 @@ dvc pull
 `dvc pull` reads `data.dvc`, matches the hash against the remote, downloads into `./data`. Credentials aren't in git either so a fresh clone needs `.dvc/config.local` set up again first, same as question 3.
 
 - Question 8:
+
+No. `git log --oneline -- data.dvc` shows two commits: `366c174 Track data folder with dvc` (raw only) and `39cd60c Add food11_processed and food11_processed_mini`. Checking out `366c174` and running `dvc checkout` leaves only `food11_raw/` in `data/`, the processed folders are gone, because at that point in history `data.dvc` only pointed at the raw hash. Checking `main` back out and running `dvc checkout` again brings `food11_processed/` and `food11_processed_mini/` back.
