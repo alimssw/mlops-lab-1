@@ -1,0 +1,13 @@
+[project]
+name = "mlops-lab-1"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Ali", email = "ali.al.moussawi@icloud.com" }
+]
+requires-python = ">=3.14"
+dependencies = []
+
+[tool.uv]
+package = false
