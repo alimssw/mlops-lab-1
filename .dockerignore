@@ -1,0 +1,17 @@
+.venv/
+data/
+data.dvc
+.dvc/
+.dvcignore
+mlruns/
+mlflow.db
+.git/
+.gitignore
+.claude/
+lab/
+__pycache__/
+*.pyc
+Dockerfile
+.dockerignore
+README.md
+.python-version
