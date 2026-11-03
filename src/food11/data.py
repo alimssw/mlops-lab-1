@@ -28,7 +28,7 @@ MINI_LIMIT = 100
 
 
 def category_from_filename(filename: str) -> str:
-    return CLASSES[int(filename.split("_", 1)[0])]
+    return CLASSES[int(filename.split("_", 1)[0]) - 1]
 
 
 def resize_image(img: Image.Image, size: int = IMAGE_SIZE) -> Image.Image:
